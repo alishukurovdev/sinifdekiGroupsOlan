@@ -20,6 +20,10 @@ namespace ConsoleApp3
             {
                 Console.WriteLine(student.Name + " " + student.Surname);
             }
+            Book bk = new Book("fizuli", "shukurov");
+            Library lb= new Library();
+            lb.AddBook(bk);
+            Console.WriteLine(lb[1].Name);
         }
     }
 }
